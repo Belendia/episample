@@ -20,7 +20,7 @@
             android:background="@drawable/item_background_state"
             android:gravity="center"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
 
         <RelativeLayout

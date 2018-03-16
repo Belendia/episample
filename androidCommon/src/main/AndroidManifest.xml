@@ -18,8 +18,4 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
 
-    <uses-library
-        android:name="com.google.android.maps"
-        android:required="false" />
-
 </manifest>

@@ -43,7 +43,7 @@ public class DataTableColumns implements BaseColumns {
 
   /**
    * (_savepoint_timestamp, _savepoint_creator, _savepoint_type, _form_id, _locale)
-   * are the tuple written and managed by ODK Survey when a record is updated. ODK
+   * are the tuple written and managed by EpiSample when a record is updated. ODK
    * Tables needs to update these appropriately when a cell is directly edited based
    * upon whether or not the table is 'form-managed' or not.
    *

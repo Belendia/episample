@@ -2,14 +2,14 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_checked="true"><shape android:shape="rectangle">
-            <size android:height="20dp" android:width="20dp" />
+            <size android:height="@dimen/checkbox_height" android:width="@dimen/checkbox_width" />
 
             <gradient android:angle="270" android:endColor="#ff325692" android:startColor="#ff4285f4" />
 
             <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp" />
         </shape></item>
     <item android:state_pressed="true"><shape android:shape="rectangle">
-            <size android:height="20dp" android:width="20dp" />
+            <size android:height="@dimen/checkbox_height" android:width="@dimen/checkbox_width" />
 
             <gradient android:angle="270" android:endColor="#ff325692" android:startColor="#ff4285f4" />
 
@@ -18,7 +18,7 @@
     <item><shape android:shape="rectangle">
             <stroke android:width="3px" android:color="#4285f4" />
 
-            <size android:height="20dp" android:width="20dp" />
+            <size android:height="@dimen/checkbox_height" android:width="@dimen/checkbox_width" />
 
             <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp" />
         </shape></item>

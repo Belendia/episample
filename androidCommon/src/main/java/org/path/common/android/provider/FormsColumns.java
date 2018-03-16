@@ -20,9 +20,9 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 
 /**
- * ODK Survey (only)
+ * EpiSample (only)
  *
- * Tracks what forms are available in the ODK Survey forms directory.
+ * Tracks what forms are available in the EpiSample forms directory.
  */
 public final class FormsColumns implements BaseColumns {
   // This class cannot be instantiated
@@ -68,7 +68,7 @@ public final class FormsColumns implements BaseColumns {
       DEFAULT_FORM_LOCALE, INSTANCE_NAME };
 
   /**
-   * Get the create sql for the forms table (ODK Survey only).
+   * Get the create sql for the forms table (EpiSample only).
    *
    * @return
    */

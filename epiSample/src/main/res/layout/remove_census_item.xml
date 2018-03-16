@@ -10,13 +10,12 @@
 	android:paddingBottom="4dip">
    	<ImageView
 		android:id="@+id/imageButton1"
-		android:layout_width="40dp"
-		android:layout_height="40dp"
+		android:layout_width="@dimen/image_button_width"
+		android:layout_height="@dimen/image_button_height"
 		android:layout_centerVertical="true"
 		android:layout_alignParentTop="true"
-		android:src="@+drawable/ic_census_by_date"
-		android:contentDescription="@string/remove"
-		android:textAppearance="?android:attr/textAppearanceLarge"/>
+		android:src="@drawable/ic_census_by_date"
+		android:contentDescription="@string/remove" />
 	<TextView
 		android:id="@+id/dateTextView"
 		android:layout_width="wrap_content"
@@ -26,7 +25,7 @@
 		android:layout_toRightOf="@+id/imageButton1"
 		android:textColor="@color/dark_blue"
 		android:paddingLeft="10dp"
-		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		android:textSize="@dimen/text_size"/>
 
 	<CheckBox
 		android:id="@+id/checkbox"

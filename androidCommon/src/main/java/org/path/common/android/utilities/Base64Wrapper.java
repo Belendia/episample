@@ -22,7 +22,7 @@ import org.apache.commons.lang3.CharEncoding;
 
 /**
  * Wrapper class for accessing Base64 functionality. This allows API Level 7
- * deployment of ODK Survey while enabling API Level 8 and higher phone to
+ * deployment of EpiSample while enabling API Level 8 and higher phone to
  * support encryption.
  *
  * @author mitchellsundt@gmail.com

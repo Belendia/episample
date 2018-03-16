@@ -23,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/deviceImageView"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="3dp"
                 android:contentDescription="@string/device"
@@ -44,9 +44,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:singleLine="true"
                     android:text="@string/device"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_info" />
 
                 <TextView
                     android:id="@+id/deviceStatusTextView"
@@ -54,13 +54,13 @@
                     android:layout_height="wrap_content"
                     android:text="@string/join"
                     android:textColor="@color/dark_brown"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/text_size_small" />
             </LinearLayout>
             
             <ImageView
                 android:id="@+id/disconnectImageView"
-				android:layout_width="40dp"
-				android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
 				android:background="@drawable/circular_button"
 				android:layout_alignParentRight="true"
 				android:layout_centerVertical="true"
@@ -77,18 +77,19 @@
             android:baselineAligned="false"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="3dp" >
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/image_button_width">
 
             <TextView
                 android:id="@+id/totalValidTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="53dp"
+                android:paddingLeft="15dp"
                 android:layout_weight="1"
                 android:text="@string/send_receive_valid"
                 android:textColor="@color/dark_brown"
-                android:textSize="13sp"
-                android:singleLine="true" />
+                android:textSize="@dimen/text_size_short_info" />
 
             <TextView
                 android:id="@+id/totalInalidTextView"
@@ -97,8 +98,7 @@
                 android:layout_weight="1"
                 android:text="@string/send_receive_invalid"
                 android:textColor="@color/dark_brown"
-                android:textSize="13sp"
-                android:singleLine="true" />
+                android:textSize="@dimen/text_size_short_info" />
 
             <TextView
                 android:id="@+id/totalExcludedTextView"
@@ -107,8 +107,7 @@
                 android:layout_weight="1"
                 android:text="@string/send_receive_excluded"
                 android:textColor="@color/dark_brown"
-                android:textSize="13sp"
-                android:singleLine="true" />
+                android:textSize="@dimen/text_size_short_info" />
         </LinearLayout>
 
        <LinearLayout
@@ -119,7 +118,7 @@
             android:baselineAligned="false"
             android:orientation="horizontal"
             android:layout_marginRight="1dp"
-            android:paddingLeft="40dp" >
+            android:paddingLeft="@dimen/image_button_width" >
 
             <RelativeLayout
                 android:id="@+id/receivedContainer"
@@ -132,25 +131,24 @@
 
                 <ImageView
                     android:id="@+id/receivedImageView"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="@dimen/small_image_width"
+                    android:layout_height="@dimen/small_image_width"
                     android:layout_marginLeft="2dp"
-                    android:contentDescription="@string/device"
+                    android:contentDescription="@string/received"
                     android:gravity="left|center"
                     android:src="@drawable/ic_received" />
 
                 <TextView
                     android:id="@+id/receivedTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="26dp"
+                    android:layout_height="@dimen/gps_info_image_height"
                     android:layout_toRightOf="@id/receivedImageView"
                     android:gravity="left|center"
                     android:paddingLeft="3dp"
                     android:text="@string/received"
                     android:textColor="@color/dark_brown"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
-                    android:singleLine="true" />
+                    android:textSize="@dimen/text_size_short_info"
+                    android:textStyle="bold" />
             </RelativeLayout>
             
             <RelativeLayout
@@ -162,25 +160,24 @@
 
                 <ImageView
                     android:id="@+id/sendImageView"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="@dimen/small_image_width"
+                    android:layout_height="@dimen/small_image_width"
                     android:layout_marginLeft="2dp"
-                    android:contentDescription="@string/device"
+                    android:contentDescription="@string/sent"
                     android:gravity="left|center"
                     android:src="@drawable/ic_sent" />
 
                 <TextView
                     android:id="@+id/sentTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="26dp"
+                    android:layout_height="@dimen/gps_info_image_height"
                     android:layout_toRightOf="@id/sendImageView"
                     android:gravity="left|center"
                     android:paddingLeft="3dp"
                     android:text="@string/sent"
                     android:textColor="@color/dark_brown"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
-                    android:singleLine="true" />
+                    android:textSize="@dimen/text_size_short_info"
+                    android:textStyle="bold" />
             </RelativeLayout>
            
         </LinearLayout>

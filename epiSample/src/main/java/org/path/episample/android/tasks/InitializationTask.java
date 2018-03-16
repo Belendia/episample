@@ -203,7 +203,7 @@ public class InitializationTask extends AsyncTask<Void, String, ArrayList<String
 	}
 
 	private void registerCensusForm() {
-		// create a census table in ODK Survey's database
+		// create a census table in EpiSample's database
 		SQLiteDatabase db = null;
 
 		try {

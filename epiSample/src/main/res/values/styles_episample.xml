@@ -30,8 +30,8 @@
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_episample</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.EpiSample</item>
         
-        <item name="android:scrollbarThumbHorizontal">@+drawable/thumb</item>
-	    <item name="android:scrollbarThumbVertical">@+drawable/thumb</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/thumb</item>
+	    <item name="android:scrollbarThumbVertical">@drawable/thumb</item>
 	    <item name="android:scrollbarSize">2.5mm</item>
 	    <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
 	    <item name="android:scrollbarAlwaysDrawHorizontalTrack">true</item>

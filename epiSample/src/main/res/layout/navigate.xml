@@ -31,20 +31,20 @@
 
                 <org.path.episample.android.views.CompassView
                     android:id="@+id/compass"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="@dimen/compass_width"
+                    android:layout_height="@dimen/compass_height"
                     android:src="@drawable/compass" />
 
                 <org.path.episample.android.views.CompassView
                     android:id="@+id/censusLocation"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="@dimen/compass_width"
+                    android:layout_height="@dimen/compass_height"
                     android:src="@drawable/census_bearing"
                     android:visibility="gone" />
 
                 <org.path.episample.android.views.CompassView
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="@dimen/compass_width"
+                    android:layout_height="@dimen/compass_height"
                     android:src="@drawable/compass_heading" />
             </FrameLayout>
 
@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/dark_blue"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textStyle="bold" />
 
                 <TextView
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:textColor="@color/dark_blue"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/text_size_small2"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/incompleteTextView"
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:textColor="@color/dark_blue"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/text_size_small2"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/notStartedTextView"
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:textColor="@color/dark_blue"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/text_size_small2"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -99,16 +99,16 @@
 
                 <com.todddavies.components.progressbar.ProgressWheel
                     android:id="@+id/signalQualitySpinner"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
+                    android:layout_width="@dimen/small_signal_quality_progress_wheel_width"
+                    android:layout_height="@dimen/small_signal_quality_progress_wheel_height"
                     ProgressWheel:barColor="#2E9121"
-                    ProgressWheel:barLen="30dp"
-                    ProgressWheel:barWidth="3dp"
+                    ProgressWheel:barLen="@dimen/small_signal_quality_progress_wheel_bar_length"
+                    ProgressWheel:barWidth="@dimen/small_signal_quality_progress_wheel_bar_width"
                     ProgressWheel:rimColor="#332E9121"
                     ProgressWheel:rimWidth="1dp"
                     ProgressWheel:text="@string/acc_value"
                     ProgressWheel:textColor="#2E9121"
-                    ProgressWheel:textSize="12sp" />
+                    ProgressWheel:textSize="@dimen/small_signal_quality_progress_wheel_text_size" />
 
                 <LinearLayout
                     android:id="@+id/directionContainer"
@@ -123,7 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/dark_blue"
-                        android:textSize="12sp"
+                        android:textSize="@dimen/text_size_small"
                         android:textStyle="bold" />
 
                     <TextView
@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/dark_blue"
-                        android:textSize="12sp"
+                        android:textSize="@dimen/text_size_small"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
@@ -146,7 +146,7 @@
             android:background="@drawable/item_background_state"
             android:gravity="center"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -177,7 +177,8 @@
                 android:gravity="center"
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
-                android:text="@string/no_points_to_display" />
+                android:text="@string/no_points_to_display"
+                android:textSize="@dimen/text_size_title_info"/>
         </FrameLayout>
     </RelativeLayout>
 

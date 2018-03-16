@@ -40,8 +40,8 @@ public class RandomSample implements ISelectAlgorithm {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		String dateLastSelected = sdf.format(calendar.getTime());
 
-		int sampleFrame = CensusUtil.getTotalValid(getApplication())
-				+ CensusUtil.getTotalInvalid(getApplication());
+		int sampleFrame = CensusUtil.getTotalValid(getApplication());
+				//+ CensusUtil.getTotalInvalid(getApplication());
 
 		ArrayList<CensusModel> censuses = CensusUtil
 				.getAllValid(getApplication());// get all valid points from

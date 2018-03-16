@@ -228,7 +228,7 @@ public final class ClientConnectionManagerFactory {
     // setup client
     HttpClient httpclient;
 
-    // reuse the connection manager across all clients this ODK Survey
+    // reuse the connection manager across all clients this EpiSample
     // creates.
     if (httpConnectionManager == null) {
       // let Apache stack create a connection manager.

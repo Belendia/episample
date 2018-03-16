@@ -48,7 +48,7 @@
                             android:gravity="center"
                             android:text="@string/total"
                             android:textColor="@color/total_info"
-                            android:textSize="15sp" />
+                            android:textSize="@dimen/bubble_text_size" />
 
                         <TextView
                             android:id="@+id/totalPointsTextView"
@@ -59,7 +59,7 @@
                             android:paddingTop="5dp"
                             android:text="@string/zero"
                             android:textColor="@color/total_info"
-                            android:textSize="20sp"
+                            android:textSize="@dimen/text_size_main_info"
                             android:textStyle="bold" />
                     </RelativeLayout>
 
@@ -75,7 +75,7 @@
                             android:gravity="center"
                             android:text="@string/total_valid"
                             android:textColor="@color/total_info"
-                            android:textSize="15sp" />
+                            android:textSize="@dimen/bubble_text_size" />
 
                         <TextView
                             android:id="@+id/validPointsTextView"
@@ -86,7 +86,7 @@
                             android:paddingTop="5dp"
                             android:text="@string/zero"
                             android:textColor="@color/spinner_text_color_green"
-                            android:textSize="20sp"
+                            android:textSize="@dimen/text_size_main_info"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -106,7 +106,7 @@
                         android:gravity="left"
                         android:text="@string/select"
                         android:textColor="@color/total_info"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/bubble_text_size" />
 
                     <LinearLayout
                         android:id="@+id/mainPointLinearLayout"
@@ -120,14 +120,14 @@
                         <EditText
                             android:id="@+id/mainPointsEditText"
                             android:layout_width="0dp"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_weight="1"
                             android:background="@drawable/round_border"
                             android:inputType="number"
                             android:maxLength="3"
                             android:padding="8dp"
-                            android:singleLine="true"
-                            android:textSize="16sp" />
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size" />
 
                         <TextView
                             android:id="@+id/mainPointsTextView"
@@ -137,7 +137,7 @@
                             android:layout_marginLeft="10dp"
                             android:text="@string/main_points"
                             android:textColor="@color/dark_blue"
-                            android:textSize="15sp" />
+                            android:textSize="@dimen/bubble_text_size" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -152,14 +152,14 @@
                         <EditText
                             android:id="@+id/additionalPointsEditText"
                             android:layout_width="0dp"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_weight="1"
                             android:background="@drawable/round_border"
                             android:inputType="number"
                             android:maxLength="3"
                             android:padding="8dp"
-                            android:singleLine="true"
-                            android:textSize="16sp" />
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size" />
 
                         <TextView
                             android:id="@+id/additionalPointsTextView"
@@ -169,7 +169,7 @@
                             android:layout_marginLeft="10dp"
                             android:text="@string/additional_points"
                             android:textColor="@color/dark_blue"
-                            android:textSize="15sp" />
+                            android:textSize="@dimen/bubble_text_size" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -184,14 +184,14 @@
                         <EditText
                             android:id="@+id/alternatePointsEditText"
                             android:layout_width="0dp"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_weight="1"
                             android:background="@drawable/round_border"
                             android:inputType="number"
                             android:maxLength="3"
                             android:padding="8dp"
-                            android:singleLine="true"
-                            android:textSize="16sp" />
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size" />
 
                         <TextView
                             android:id="@+id/alternatePointsTextView"
@@ -201,17 +201,17 @@
                             android:layout_marginLeft="10dp"
                             android:text="@string/alternate_points"
                             android:textColor="@color/dark_blue"
-                            android:textSize="15sp" />
+                            android:textSize="@dimen/bubble_text_size" />
                     </LinearLayout>
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/selectContainer"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/item_background_state"
                     android:gravity="right|center"
-                    android:paddingRight="15dp" >
+                    android:padding="10dp" >
 
                     <RelativeLayout
                         android:id="@+id/selectButtonContainer"
@@ -223,22 +223,22 @@
 
                         <ImageButton
                             android:id="@+id/selectImageButton"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_width"
+                            android:layout_height="@dimen/image_button_height"
                             android:layout_marginRight="-2dp"
                             android:background="@drawable/left_border_blue_part_of_button"
-                            android:contentDescription="@string/save"
+                            android:contentDescription="@string/select"
                             android:src="@drawable/ic_tick" />
 
                         <TextView
                             android:id="@+id/selectButton"
-                            android:layout_width="80dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_medium_width"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_toRightOf="@id/selectImageButton"
                             android:gravity="center"
                             android:text="@string/select_place_name_button"
                             android:textColor="#ffffff"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/text_size" />
                     </RelativeLayout>
                 </RelativeLayout>
             </LinearLayout>

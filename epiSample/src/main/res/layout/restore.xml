@@ -16,7 +16,7 @@
             android:background="@drawable/item_background_state"
             android:gravity="center"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
     
     <LinearLayout
@@ -39,7 +39,8 @@
             android:gravity="center"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:text="@string/no_backup_files_found" />
+            android:text="@string/no_backup_files_found"
+            android:textSize="@dimen/text_size"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -60,8 +61,8 @@
 
             <ImageButton
                 android:id="@+id/joinRestoreImageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_marginRight="-2dp"
                 android:background="@drawable/left_border_blue_part_of_button"
                 android:contentDescription="@string/join_restore"
@@ -69,13 +70,13 @@
 
             <TextView
                 android:id="@+id/joinRestoreTextView"
-                android:layout_width="110dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_large_width"
+                android:layout_height="@dimen/text_view_height"
                 android:layout_toRightOf="@id/joinRestoreImageButton"
                 android:gravity="center"
                 android:text="@string/join_restore"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -88,8 +89,8 @@
 
             <ImageButton
                 android:id="@+id/restoreImageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_marginRight="-2dp"
                 android:background="@drawable/left_border_blue_part_of_button"
                 android:contentDescription="@string/restore"
@@ -97,13 +98,13 @@
 
             <TextView
                 android:id="@+id/restoreTextView"
-                android:layout_width="80dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_medium_width"
+                android:layout_height="@dimen/text_view_height"
                 android:layout_toRightOf="@id/restoreImageButton"
                 android:gravity="center"
                 android:text="@string/restore"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
         </RelativeLayout>
     </RelativeLayout>
 

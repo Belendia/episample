@@ -42,7 +42,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/main_points"
 	                    android:textColor="@color/dark_blue" />
                     <CheckBox
@@ -52,7 +52,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/additional_points"
 	                    android:textColor="@color/dark_blue" />
                     <CheckBox
@@ -62,7 +62,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/alternate_points"
 	                    android:textColor="@color/dark_blue" />
                     <CheckBox
@@ -72,7 +72,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/excluded_points"
 	                    android:textColor="@color/dark_blue" />
                     <CheckBox
@@ -82,7 +82,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/not_selected_points"
 	                    android:textColor="@color/dark_blue" />
 					<CheckBox
@@ -92,7 +92,7 @@
 	                    android:button="@drawable/checkbox"
 	                    android:checked="false"
 	                    android:padding="7dp"
-	                    android:textSize="16sp"
+	                    android:textSize="@dimen/text_size"
 	                    android:text="@string/finalized_points"
 	                    android:textColor="@color/dark_blue" />
 					
@@ -101,9 +101,10 @@
                 <RelativeLayout
                     android:id="@+id/selectContainer"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/item_background_state"
-                    android:gravity="center" >
+                    android:gravity="center"
+					android:padding="10dp">
 
                     <RelativeLayout
                         android:id="@+id/selectButtonContainer"
@@ -116,8 +117,8 @@
 
                         <ImageButton
                             android:id="@+id/selectImageButton"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+							android:layout_width="@dimen/image_button_width"
+							android:layout_height="@dimen/image_button_height"
                             android:layout_marginRight="-2dp"
                             android:background="@drawable/left_border_blue_part_of_button"
                             android:contentDescription="@string/select"
@@ -126,13 +127,13 @@
 
                         <TextView
                             android:id="@+id/selectButton"
-                            android:layout_width="80dp"
-                            android:layout_height="40dp"
+							android:layout_width="@dimen/image_button_medium_width"
+							android:layout_height="@dimen/text_view_height"
                             android:layout_toRightOf="@id/selectImageButton"
                             android:gravity="center"
                             android:text="@string/select_place_name_button"
                             android:textColor="#ffffff"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/text_size" />
                     </RelativeLayout>
                 </RelativeLayout>
             </LinearLayout>

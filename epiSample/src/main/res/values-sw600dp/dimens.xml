@@ -1,0 +1,58 @@
+<resources>
+
+    <dimen name="compass_width">200dp</dimen>
+    <dimen name="compass_height">200dp</dimen>
+
+    <dimen name="large_signal_quality_progress_wheel_width">190dp</dimen>
+    <dimen name="large_signal_quality_progress_wheel_height">190dp</dimen>
+    <dimen name="large_signal_quality_progress_wheel_bar_length">100dp</dimen>
+    <dimen name="large_signal_quality_progress_wheel_bar_width">7dp</dimen>
+    <dimen name="large_signal_quality_progress_wheel_text_size">30dp</dimen>
+
+    <dimen name="small_signal_quality_progress_wheel_width">95dp</dimen>
+    <dimen name="small_signal_quality_progress_wheel_height">95dp</dimen>
+    <dimen name="small_signal_quality_progress_wheel_bar_length">50dp</dimen>
+    <dimen name="small_signal_quality_progress_wheel_bar_width">4dp</dimen>
+    <dimen name="small_signal_quality_progress_wheel_text_size">16sp</dimen>
+
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_small2">16sp</dimen>
+    <dimen name="text_size_short_info">15sp</dimen>
+    <dimen name="text_size_title_info">18dp</dimen>
+    <dimen name="gps_info_text_size">18dp</dimen>
+    <dimen name="select_module_text_size">16sp</dimen>
+    <dimen name="bubble_text_size">20sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="main_button_text_size">24sp</dimen>
+    <dimen name="text_size_main_info">24dp</dimen>
+    <dimen name="gps_info_text_view_height">36dp</dimen>
+    <dimen name="digital_text_size">48dp</dimen>
+
+    <dimen name="text_view_height">58dp</dimen>
+    <dimen name="gps_info_text_view_width">150dp</dimen>
+
+    <dimen name="checkbox_width">30dp</dimen>
+    <dimen name="checkbox_height">30dp</dimen>
+
+    <dimen name="small_image_width">30dp</dimen>
+    <dimen name="small_imae_height">30dp</dimen>
+    <dimen name="image_button_width">58dp</dimen>
+    <dimen name="image_button_height">58dp</dimen>
+    <dimen name="image_button_medium_width">110dp</dimen>
+    <dimen name="image_button_large_width">140dp</dimen>
+    <dimen name="gps_info_image_width">36dp</dimen>
+    <dimen name="gps_info_image_height">36dp</dimen>
+    <dimen name="main_menu_button_width">70dp</dimen>
+    <dimen name="main_menu_button_height">74dp</dimen>
+
+    <dimen name="button_curve">6dp</dimen>
+    <dimen name="button_stroke">2dp</dimen>
+
+    <dimen name="container_size">80dp</dimen>
+
+    <dimen name="padding_left">7dp</dimen>
+    <dimen name="main_menu_margine_size">4dp</dimen>
+
+    <dimen name="progress_bar_width">35dp</dimen>
+    <dimen name="progress_bar_height">35dp</dimen>
+</resources>

@@ -35,6 +35,7 @@ import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.AsyncTask;
+import android.util.Log;
 
 /*
  * @author belendia@gmail.com
@@ -94,6 +95,7 @@ public class LoadPointsTask extends AsyncTask<Void, Void, Void> {
 					if(row[0].matches("uuid:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[34][0-9a-fA-F]{3}-[89ab][0-9a-fA-F]{3}-[0-9a-fA-F]{12}")) {
 						census.setInstanceId(row[0]);
 					} else {
+						Log.d("Belendia", "Unable to import: " + row[0]);
 						continue;
 					}
 				}

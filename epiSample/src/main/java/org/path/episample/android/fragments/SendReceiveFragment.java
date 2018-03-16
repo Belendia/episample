@@ -288,7 +288,7 @@ public class SendReceiveFragment extends ListFragment implements
 				R.layout.device_detail_list_item, getConnectedDevices());
 		adapter.setDisconnect(this);
 		setListAdapter(adapter);
-		mWifiManager = (WifiManager) getActivity().getSystemService(
+		mWifiManager = (WifiManager) getActivity().getApplicationContext().getSystemService(
 				Context.WIFI_SERVICE);
 	}
 

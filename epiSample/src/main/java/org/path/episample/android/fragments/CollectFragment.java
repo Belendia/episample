@@ -51,6 +51,7 @@ import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -84,6 +85,7 @@ public class CollectFragment extends Fragment implements LocationListener,
 	private static final String POSITION = "position";
 	private static final String NEW_RECORD = "newRecord";
 	private static final String DONT_FREEZE = "dontFreeze";
+	private static final String PLACE_NAME_CODE = "placeNameCode";
 
 	private String mAlertMsg;
 	private DialogState mDialogState = DialogState.None;
@@ -304,6 +306,10 @@ public class CollectFragment extends Fragment implements LocationListener,
 						.getString(PLACE_NAME_SELECTED));
 			}
 
+			if (savedInstanceState.containsKey(PLACE_NAME_CODE)) {
+				mPlaceNameCode = savedInstanceState.getString(PLACE_NAME_CODE);
+			}
+
 			// restore position
 			if (savedInstanceState.containsKey(POSITION)) {
 				mPosition = savedInstanceState.getInt(POSITION);
@@ -385,9 +391,11 @@ public class CollectFragment extends Fragment implements LocationListener,
 		outState.putString(DIALOG_MSG, mAlertMsg);
 		outState.putString(PLACE_NAME_SELECTED, mPlaceNameTextView.getText()
 				.toString());
+		outState.putString(PLACE_NAME_CODE, mPlaceNameCode);
 		outState.putInt(POSITION, mPosition);
 		outState.putBoolean(NEW_RECORD, mNewRecord);
 		outState.putSerializable(DONT_FREEZE, mDontFreeze);
+
 	}
 
 	@Override
@@ -504,7 +512,6 @@ public class CollectFragment extends Fragment implements LocationListener,
 		if (get != null) {
 			mPhoneNumber = get;
 		}
-
 	}
 
 	private void startSpin() {
@@ -804,14 +811,17 @@ public class CollectFragment extends Fragment implements LocationListener,
 
 	private void displayContent() {
 		CensusModel census = mCensuses.get(mPosition);
+		String name = "";
+		mPlaceNameCode = "";
 		if (mGeoHierarchy != null && mGeoHierarchy.size() > 0
 				&& census.getPlaceName() != null) {
-			String name = PlaceNameUtil.getName(getActivity()
+			 name = PlaceNameUtil.getName(getActivity()
 					.getApplicationContext(), mGeoHierarchy.get(mGeoHierarchy
 					.size() - 1), census.getPlaceName());
-			mPlaceNameTextView.setText(name);
+
 			mPlaceNameCode = census.getPlaceName();
 		}
+		mPlaceNameTextView.setText(name);
 		
 		mHouseNumberTextView.setText(census.getHouseNumber());
 		mHeadNameTextView.setText(census.getHeadName());
@@ -905,6 +915,22 @@ public class CollectFragment extends Fragment implements LocationListener,
 
 	private boolean validateUserInput() {
 		if (mPlaceNameTextView.getText().toString().trim().length() == 0) {
+			createAlertDialog(getString(
+					R.string.user_input_validation_error_message,
+					getString(R.string.place_name)));
+			mHouseNumberTextView.requestFocus();
+			return false;
+		}
+
+		if (mPlaceNameCode == null) {
+			createAlertDialog(getString(
+					R.string.user_input_validation_error_message,
+					getString(R.string.place_name)));
+			mHouseNumberTextView.requestFocus();
+			return false;
+		}
+
+		if (mPlaceNameCode.trim().length()==0) {
 			createAlertDialog(getString(
 					R.string.user_input_validation_error_message,
 					getString(R.string.place_name)));

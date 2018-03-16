@@ -875,7 +875,7 @@ public class MainMenuActivity extends Activity implements ODKActivity {
     // android.os.Debug.waitForDebugger();
 
     mPropertyManager = new PropertyManager(this);
-    mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+    mWifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
     
     // must be at the beginning of any activity that can be called from an
     // external intent

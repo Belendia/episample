@@ -24,11 +24,11 @@
 
             <ImageView
                 android:id="@+id/censusImageView"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="3dp"
-                android:contentDescription="@string/device" />
+                android:contentDescription="@string/census" />
 
             <LinearLayout
                 android:id="@+id/infoLinearLayout"
@@ -44,9 +44,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:singleLine="true"
                     android:text="@string/head_name"
-                    android:textColor="@color/dark_blue" />
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/text_size"/>
 
                 <TextView
                     android:id="@+id/houseNoTextView"
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/house_number"
                     android:textColor="@color/dark_brown"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/text_size_short_info" />
 
                 <TextView
                     android:id="@+id/commentTextView"
@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/comment"
                     android:textColor="@color/dark_brown"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/text_size_small"
                     android:textStyle="italic" />
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/dark_brown"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/text_size_small"
                     android:text="@string/place_name_hierarchy" />
             </LinearLayout>
 

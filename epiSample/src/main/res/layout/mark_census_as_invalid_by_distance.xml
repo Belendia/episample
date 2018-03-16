@@ -24,20 +24,20 @@
             <EditText
                 android:id="@+id/metersEditText"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="@dimen/text_view_height"
                 android:layout_weight="1"
                 android:background="@drawable/left_round_border"
                 android:hint="@string/meters"
                 android:inputType="number"
                 android:maxLength="5"
                 android:padding="8dp"
-                android:singleLine="true"
-                android:textSize="16sp" />
+                android:maxLines="1"
+                android:textSize="@dimen/text_size" />
 
             <ImageButton
                 android:id="@+id/findImageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_marginLeft="-8dp"
                 android:background="@drawable/right_border_button"
                 android:contentDescription="@string/last_plus_one"
@@ -53,7 +53,7 @@
         android:background="@drawable/item_background_state"
         android:gravity="center"
         android:textColor="@color/dark_blue"
-        android:textSize="12sp"
+        android:textSize="@dimen/text_size_small"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -75,6 +75,7 @@
             android:gravity="center"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
+            android:textSize="@dimen/text_size_title_info"
             android:text="@string/search_for_pair_of_points" />
     </LinearLayout>
 

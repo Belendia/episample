@@ -1746,7 +1746,7 @@ public class ODKDatabaseUtils {
 
   /**
    * Delete any checkpoint rows for the given rowId in the tableId. Checkpoint
-   * rows are created by ODK Survey to hold intermediate values during the
+   * rows are created by EpiSample to hold intermediate values during the
    * filling-in of the form. They act as restore points in the Survey, should
    * the application die.
    * 

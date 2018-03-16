@@ -24,7 +24,7 @@
                 android:padding="5dp"
                 android:text="@string/distance"
                 android:textColor="@color/dark_blue"
-                android:textSize="13sp" />
+                android:textSize="@dimen/bubble_text_size" />
 
             <RelativeLayout
                 android:id="@+id/censusInfoContainer1"
@@ -35,10 +35,10 @@
 
                 <ImageView
                     android:id="@+id/censusImageView1"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
                     android:layout_marginLeft="3dp"
-                    android:contentDescription="@string/device"
+                    android:contentDescription="@string/census"
                     android:src="@drawable/ic_house_1" />
 
                 <LinearLayout
@@ -54,26 +54,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:singleLine="true"
                         android:text="@string/head_name"
-                        android:textColor="@color/dark_blue" />
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/gps_info_text_size"/>
 
                     <TextView
                         android:id="@+id/houseNoTextView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/house_number"
-                        android:textColor="@color/dark_brown" />
+                        android:textColor="@color/dark_brown"
+                        android:textSize="@dimen/text_size_short_info"/>
                 </LinearLayout>
 
                 <ImageButton
 	                android:id="@+id/invalidateImageButton1"
-					android:layout_width="40dp"
-					android:layout_height="40dp"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
 					android:background="@drawable/circular_button"
 					android:layout_alignParentRight="true"
 					android:layout_centerVertical="true"
-					android:contentDescription="@string/disconnect"
+					android:contentDescription="@string/invalidate"
 					android:src="@drawable/ic_invalidate"
 					android:layout_marginRight="6dp" />
             </RelativeLayout>
@@ -87,10 +88,10 @@
 
                 <ImageView
                     android:id="@+id/censusImageView2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
                     android:layout_marginLeft="3dp"
-                    android:contentDescription="@string/device"
+                    android:contentDescription="@string/census"
                     android:src="@drawable/ic_house_2" />
 
                 <LinearLayout
@@ -106,26 +107,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:singleLine="true"
                         android:text="@string/head_name"
-                        android:textColor="@color/dark_blue" />
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/gps_info_text_size"/>
 
                     <TextView
                         android:id="@+id/houseNoTextView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/house_number"
-                        android:textColor="@color/dark_brown" />
+                        android:textColor="@color/dark_brown"
+                        android:textSize="@dimen/text_size_short_info"/>
                 </LinearLayout>
 
                 <ImageButton
 	                android:id="@+id/invalidateImageButton2"
-					android:layout_width="40dp"
-					android:layout_height="40dp"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
 					android:background="@drawable/circular_button"
 					android:layout_alignParentRight="true"
 					android:layout_centerVertical="true"
-					android:contentDescription="@string/disconnect"
+					android:contentDescription="@string/invalidate"
 					android:src="@drawable/ic_invalidate"
 					android:layout_marginRight="6dp"/>
             </RelativeLayout>

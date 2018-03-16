@@ -25,7 +25,7 @@ import android.app.Activity;
  * The class mapped to 'dbshim' in the Javascript
  *
  * This class implements the W3C WebSQL interface subset that is supported by
- * ODK Survey. See dbif.js
+ * EpiSample. See dbif.js
  *
  * @author mitchellsundt@gmail.com
  *

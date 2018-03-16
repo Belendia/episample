@@ -38,14 +38,14 @@ public class DatabaseConstants {
   public static final String COLUMN_DEFINITIONS_TABLE_NAME = "_column_definitions";
 
   /**
-   * For ODK Survey (only)
+   * For EpiSample (only)
    *
    * Tracks all the forms present in the forms directory.
    */
   public static final String SURVEY_CONFIGURATION_TABLE_NAME = "_survey_configuration";
 
   /**
-   * For ODK Survey (only)
+   * For EpiSample (only)
    *
    * Tracks which rows have been sent to the server. TODO: rework to accommodate
    * publishing to multiple formids for a given table row
@@ -54,7 +54,7 @@ public class DatabaseConstants {
   public static final String UPLOADS_TABLE_NAME = "_uploads";
 
   /**
-   * For ODK Survey (only)
+   * For EpiSample (only)
    *
    * Tracks all the forms present in the forms directory.
    */

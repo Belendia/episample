@@ -13,7 +13,7 @@ License.
 <resources>
 <string name="accept_location">Enregistrer lieu</string>
 <string name="activity_not_found">Pas d\'activité pour gérer: %s</string>
-<string name="app_name">ODK Survey</string>
+<string name="app_name">EpiSample</string>
 <string name="cancel">Annuler</string>
 <string name="cancel_location">Annuler</string>
 <string name="change_language">Changer la Langue</string>
@@ -151,7 +151,7 @@ License.
 <string name="admin_password_incorrect">Sorry, password is incorrect!</string>
 <string name="enter_admin_password">Enter Admin Password</string>
 <string name="found_in_menu">Found using Menu button in Form Entry</string>
-<string name="shortcut_name">ODK Survey Form</string>
+<string name="shortcut_name">EpiSample Form</string>
 <string name="form_load_error">Sorry, unable to load form.</string>
 <string name="upload_in_progress">Sorry, instance upload is already in progress!</string>
 <string name="searching_for_expansion_files">Searching for APK expansion files</string>

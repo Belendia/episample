@@ -158,7 +158,7 @@ public class InstanceUploaderTask extends AsyncTask<String, Integer, InstanceUpl
 	      return true;
 	    }
 
-	    // NOTE: ODK Survey assumes you are interfacing with an
+	    // NOTE: EpiSample assumes you are interfacing with an
 	    // OpenRosa-compliant server
 
 	    if (uriRemap.containsKey(u)) {

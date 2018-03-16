@@ -17,7 +17,7 @@ package org.path.common.android.provider;
 import android.provider.BaseColumns;
 
 /**
- * ODK Survey (only)
+ * EpiSample (only)
  *
  * Tracks the upload status of each row in each data table.
  */
@@ -37,7 +37,7 @@ public final class InstanceColumns implements BaseColumns {
   public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.opendatakit.instance";
 
   // These are the only things needed for an insert
-  // _ID is the index on the table maintained for ODK Survey purposes
+  // _ID is the index on the table maintained for EpiSample purposes
   // DATA_INSTANCE_ID holds the _id value of the data record as used
   // in the javascript and ODK Tables.
   public static final String DATA_INSTANCE_ID = "_instanceId";
@@ -49,7 +49,7 @@ public final class InstanceColumns implements BaseColumns {
   public static final String DISPLAY_SUBTEXT = "_displaySubtext";
 
   /**
-   * Get the create sql for the forms table (ODK Survey only).
+   * Get the create sql for the forms table (EpiSample only).
    *
    * @return
    */

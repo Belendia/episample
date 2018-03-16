@@ -16,7 +16,7 @@
             android:background="@drawable/item_background_state"
             android:gravity="center"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
     
     <LinearLayout
@@ -39,7 +39,8 @@
             android:gravity="center"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:text="@string/no_points_to_display" />
+            android:text="@string/no_points_to_display"
+            android:textSize="@dimen/text_size_title_info" />
     </LinearLayout>
 
     <RelativeLayout
@@ -60,8 +61,8 @@
 
             <ImageButton
                 android:id="@+id/removeAllImageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_marginRight="-2dp"
                 android:background="@drawable/left_border_blue_part_of_button"
                 android:contentDescription="@string/remove_all"
@@ -69,13 +70,13 @@
 
             <TextView
                 android:id="@+id/removeAllTextView"
-                android:layout_width="70dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_medium_width"
+                android:layout_height="@dimen/text_view_height"
                 android:layout_toRightOf="@id/removeAllImageButton"
                 android:gravity="center"
                 android:text="@string/remove_all"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -88,8 +89,8 @@
 
             <ImageButton
                 android:id="@+id/removeSelectedImageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
                 android:layout_marginRight="-2dp"
                 android:background="@drawable/left_border_blue_part_of_button"
                 android:contentDescription="@string/remove_selected"
@@ -97,13 +98,13 @@
 
             <TextView
                 android:id="@+id/removeSelectedTextView"
-                android:layout_width="80dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/image_button_medium_width"
+                android:layout_height="@dimen/text_view_height"
                 android:layout_toRightOf="@id/removeSelectedImageButton"
                 android:gravity="center"
                 android:text="@string/remove_selected"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
         </RelativeLayout>
     </RelativeLayout>
 

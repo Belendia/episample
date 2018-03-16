@@ -1,6 +1,6 @@
 <p><b>NOTICE</b></p>
 
-<p>EpiSample is an open-source Android application that builds off of ODK Survey and offers additional capabilities that enable mobile population-based epidemiological studies and surveys.</p>
+<p>EpiSample is an open-source Android application that builds off of EpiSample and offers additional capabilities that enable mobile population-based epidemiological studies and surveys.</p>
 
 <p><b>Contributors</b></p>
 

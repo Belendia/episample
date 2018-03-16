@@ -41,6 +41,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /*
@@ -57,8 +58,11 @@ public class ConnectWithPeersActivity extends ListActivity implements
 	private final IntentFilter mIntentFilter = new IntentFilter();
 
 	private ImageView mConnectionFoundImageView;
+	private ImageView mCloseDialogImageView;
+	private ImageView mDiscoverPeersImageButton;
 	private LinearLayout mLoadingLinearLayout;
 	private TextView mEmptyTextView;
+	private RelativeLayout mDiscoverPeersButtonContainer;
 
 	public static String WIFI_P2P_MANAGER = "wifi_p2p_manager";
 	public static String CHANNEL = "channel";
@@ -70,8 +74,11 @@ public class ConnectWithPeersActivity extends ListActivity implements
 		setContentView(R.layout.connect_with_peers_dialog);
 
 		mConnectionFoundImageView = (ImageView) findViewById(R.id.connectionFoundImageView);
+		mCloseDialogImageView = (ImageView) findViewById(R.id.closeDialogImageView);
 		mLoadingLinearLayout = (LinearLayout) findViewById(R.id.loadingLinearLayout);
 		mEmptyTextView = (TextView) findViewById(android.R.id.empty);
+		mDiscoverPeersButtonContainer = (RelativeLayout) findViewById(R.id.discoverPeersButtonContainer);
+		mDiscoverPeersImageButton = (ImageView) findViewById(R.id.discoverPeersImageButton);
 
 		// Indicates a change in the Wi-Fi P2P status.
 		mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
@@ -90,6 +97,25 @@ public class ConnectWithPeersActivity extends ListActivity implements
 		mManager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
 		mChannel = mManager.initialize(this, getMainLooper(), null);
 
+		mCloseDialogImageView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				finish();
+			}
+		});
+
+		mDiscoverPeersButtonContainer.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				discoverPeers();
+			}
+		});
+		mDiscoverPeersImageButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				discoverPeers();
+			}
+		});
 	}
 
 	@Override
@@ -149,10 +175,6 @@ public class ConnectWithPeersActivity extends ListActivity implements
 			finish();
 		}
 
-	}
-
-	public void closeClickListener(View view) {
-		finish();
 	}
 
 	public void setAppName(String appName) {
@@ -227,10 +249,6 @@ public class ConnectWithPeersActivity extends ListActivity implements
 			mConnectionFoundImageView.setVisibility(View.GONE);
 			return;
 		}
-	}
-
-	public void rediscoverPeersClickListener(View view) {
-		discoverPeers();
 	}
 
 	@Override

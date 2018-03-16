@@ -38,7 +38,7 @@
                 <RelativeLayout
                     android:id="@+id/buttonContainer"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/container_size"
                     android:background="@drawable/item_background_state"
                     android:visibility="visible"
                     android:gravity="center" >
@@ -56,8 +56,8 @@
 
                         <ImageButton
                             android:id="@+id/clearImageButton"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_width"
+                            android:layout_height="@dimen/image_button_height"
                             android:layout_marginRight="-2dp"
                             android:background="@drawable/left_border_blue_part_of_button"
                             android:contentDescription="@string/clear_place_name_button"
@@ -66,13 +66,13 @@
 
                         <TextView
                             android:id="@+id/clearButton"
-                            android:layout_width="80dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_medium_width"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_toRightOf="@id/clearImageButton"
                             android:gravity="center"
                             android:text="@string/clear_place_name_button"
                             android:textColor="#ffffff"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/text_size" />
                         
                     </RelativeLayout>
                     
@@ -89,8 +89,8 @@
 
                         <ImageButton
                             android:id="@+id/selectImageButton"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_width"
+                            android:layout_height="@dimen/image_button_height"
                             android:layout_marginRight="-2dp"
                             android:background="@drawable/left_border_blue_part_of_button"
                             android:contentDescription="@string/save"
@@ -99,13 +99,13 @@
 
                         <TextView
                             android:id="@+id/selectButton"
-                            android:layout_width="80dp"
-                            android:layout_height="40dp"
+                            android:layout_width="@dimen/image_button_medium_width"
+                            android:layout_height="@dimen/text_view_height"
                             android:layout_toRightOf="@id/selectImageButton"
                             android:gravity="center"
                             android:text="@string/select_place_name_button"
                             android:textColor="#ffffff"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/text_size" />
                         
                     </RelativeLayout>
                     
@@ -114,17 +114,17 @@
                 <RelativeLayout
                     android:id="@+id/noPlaceNameContainer"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/container_size"
                     android:background="@drawable/item_background_state"
                     android:gravity="center"
                     android:visibility="gone" >
                     	<TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/text_view_height"
                             android:gravity="center"
                             android:text="@string/load_place_list"
                             android:textColor="@color/dark_blue"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/text_size" />
                     </RelativeLayout>
             </LinearLayout>
             

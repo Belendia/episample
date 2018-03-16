@@ -137,6 +137,7 @@ public class SelectPlaceNameActivity extends Activity {
 	@SuppressWarnings("deprecation")
 	@SuppressLint("NewApi")
 	private void createHierarchy(String name, int position) {
+
 		PlaceView placeView = new PlaceView();
 		RelativeLayout relativeLayout = new RelativeLayout(this);
 		relativeLayout.setBackgroundDrawable(getResources().getDrawable(
@@ -162,7 +163,7 @@ public class SelectPlaceNameActivity extends Activity {
 		// textView.setPadding(5, 0, 0, 0);
 		// textView.setTextAppearance(this,
 		// android.R.style.TextAppearance_DeviceDefault_Small);
-		textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+		textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, (int) (getResources().getDimensionPixelOffset(R.dimen.text_size)/getResources().getDisplayMetrics().density));
 		textView.setText(name);
 		// textView.setTextColor(Color.BLACK);
 		textView.setTextColor(getResources().getColor(
@@ -180,16 +181,23 @@ public class SelectPlaceNameActivity extends Activity {
 		Spinner spinner = new Spinner(this);
 		RelativeLayout.LayoutParams spinnerLayoutParam = new RelativeLayout.LayoutParams(
 				RelativeLayout.LayoutParams.MATCH_PARENT,
-				RelativeLayout.LayoutParams.WRAP_CONTENT);
+				(int) getResources().getDimension(R.dimen.text_view_height));
+
 		spinnerLayoutParam.addRule(RelativeLayout.BELOW, textView.getId());
 		spinner.setLayoutParams(spinnerLayoutParam);
 		spinner.setTag(position);
-		spinner.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.spinner_background));
+
+		if(Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+			spinner.setBackgroundDrawable(getResources().getDrawable(
+					R.drawable.spinner_background));
+		} else {
+			spinner.setBackground(getResources().getDrawable(
+					R.drawable.spinner_background));
+		}
+
 		spinner.setOnItemSelectedListener(spinnerItemSelectedListener);
 		relativeLayout.addView(spinner);
 		placeView.setSpinner(spinner);
-
 		relativeLayout.setPadding(10, 10, 10, 20);
 
 		mPlaceViews.add(placeView);
@@ -208,6 +216,7 @@ public class SelectPlaceNameActivity extends Activity {
 		} else {
 			relativeLayout.setVisibility(View.INVISIBLE);
 		}
+
 	}
 
 	private void setDefaultValue(Spinner spinner, int position) {
@@ -391,7 +400,7 @@ public class SelectPlaceNameActivity extends Activity {
 				1);
 
 		/**
-		 * Generate a value suitable for use in {@link #setId(int)}. This value
+		 * Generate a value suitable for use in {@link #generateViewId()}. This value
 		 * will not collide with ID values generated at build time by aapt for
 		 * R.id.
 		 * 

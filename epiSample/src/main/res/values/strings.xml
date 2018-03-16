@@ -195,6 +195,8 @@
 <string name="initializing">Initializing Survey &#8230;</string>
 
 <!-- EpiSample-->
+<string name="census">Census</string>
+<string name="invalidate">Invalidate</string>
 <string name="select_module">Select module to start working</string>
 <string name="collect_button">Collect</string>
 <string name="send_receive_button">Send/Receive</string>
@@ -455,4 +457,5 @@
 <string name="discover">Discover</string>
 <string name="peer_dis_not_started">Peer discovery not started</string>
 <string name="device_is_discoverable">Device is discoverable</string>
+    <string name="edit_text_min_lines">3</string>
 </resources>

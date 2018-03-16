@@ -17,9 +17,9 @@ package org.path.common.android.provider;
 import android.provider.BaseColumns;
 
 /**
- * ODK Survey (only)
+ * EpiSample (only)
  *
- * Configuration table for ODK Survey. Holds per-application settings for ODK
+ * Configuration table for EpiSample. Holds per-application settings for ODK
  * Survey.
  */
 public final class SurveyConfigurationColumns implements BaseColumns {
@@ -64,7 +64,7 @@ public final class SurveyConfigurationColumns implements BaseColumns {
   public static final String KEY_SPLASH_PATH = "splashPath";
 
   /**
-   * Get the create sql for the forms table (ODK Survey only).
+   * Get the create sql for the forms table (EpiSample only).
    *
    * @return
    */

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:drawable="@drawable/spinner_background_img" />
      <item android:state_pressed="true"
-           android:drawable="@drawable/spinner_background" />
-     <item android:drawable="@drawable/spinner_background" />
+           android:drawable="@drawable/spinner_background_img" />
+     <item android:state_selected="true" android:drawable="@drawable/spinner_background_img" />
 </selector>
