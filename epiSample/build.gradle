@@ -16,6 +16,10 @@ android {
         javaMaxHeapSize "4g"
     }
 
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
     buildTypes {
         release {
             minifyEnabled false

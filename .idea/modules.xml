@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EpiSample.iml" filepath="$PROJECT_DIR$/EpiSample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androidCommon/androidCommon.iml" filepath="$PROJECT_DIR$/androidCommon/androidCommon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/epiSample/epiSample.iml" filepath="$PROJECT_DIR$/epiSample/epiSample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/progressWheel/progressWheel.iml" filepath="$PROJECT_DIR$/progressWheel/progressWheel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/episample.iml" filepath="$PROJECT_DIR$/.idea/modules/episample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidCommon/episample.androidCommon.iml" filepath="$PROJECT_DIR$/.idea/modules/androidCommon/episample.androidCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/epiSample/episample.epiSample.iml" filepath="$PROJECT_DIR$/.idea/modules/epiSample/episample.epiSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/progressWheel/episample.progressWheel.iml" filepath="$PROJECT_DIR$/.idea/modules/progressWheel/episample.progressWheel.iml" />
     </modules>
   </component>
 </project>
