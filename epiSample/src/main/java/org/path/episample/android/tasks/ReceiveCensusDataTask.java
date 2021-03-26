@@ -62,7 +62,7 @@ public class ReceiveCensusDataTask extends AsyncTask<InetAddress, String, Void> 
 		while (stopListening == false && isCancelled() == false) {
 			try {
 				mServerSocket = SendReceiveSocketUtils.getServerSocket();
-				mServerSocket.setSoTimeout(1000);
+				mServerSocket.setSoTimeout(3000);
 
 				Socket client = mServerSocket.accept();
 				if (client != null) {
