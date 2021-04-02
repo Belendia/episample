@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+
     compileSdkVersion 26
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "org.path.episample.android"
@@ -32,6 +33,6 @@ dependencies {
     compile project(':progressWheel')
     compile project(':androidCommon')
     compile 'com.google.android.gms:play-services:+'
-    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:support-v4:26.0.2'
     compile 'com.android.support:multidex:1.0.0'
 }
